@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <link rel="icon" href="https://img.freepik.com/premium-vector/agriculture-icon-logo-vector-design-template_827767-2376.jpg">
+      <title>Crop prediction</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <!-- fevicon -->
+      <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+
+      <div class="container-fluid" style="position:sticky; top: 0px; z-index: 999; background-color: green;">
+         <div style="display: flex;justify-content: space-between;">
+            <div><h1 style="color:orangered;font-family: monospace;font-weight: 800;">Intelligent Crop Recommendation</h1></div>
+            <div >
+               <a style="padding-left:15px" href="/prediction">CROP PREDICTION</a>
+               <a style="padding-left:15px" href="/label">PRICE PREDICTION</a>
+               <a style="padding-left:15px" href="/aboutus">ABOUT US</a>
+               <a style="padding-left:15px" href="/">LOGOUT</a>
+              
+            </div>
+         </div>
+      </div>
+
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container-fluid">
+            <div class="row d_flex ">
+               <div class="col-xl-4 col-lg-4 col-md-12">
+                  <div class="banner_main_text">
+
+                     <div class="titlepage">
+                        <h2><br>Farmer & <br>Agriculture</h2>
+                        <p>  
+                           At Farmer & Agriculture, we're dedicated to empowering farmers with the tools and knowledge they need to succeed in today's agricultural landscape. From crop management solutions to precision agriculture techniques, we offer a comprehensive range of services tailored to optimize yields and enhance profitability. Our commitment to sustainability drives our efforts, as we prioritize environmentally friendly practices that preserve natural resources for future generations. With a team of experienced agronomists and industry professionals, we provide expertise, innovation, and unwavering support to farmers of all scales. Through educational resources and market access services, we strive to keep our clients informed, connected, and equipped to thrive in a constantly evolving industry. Join us at Farmer & Agriculture and let's cultivate a brighter future together.</p>
+                        
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-8 col-lg-8 col-md-12 padding_right">
+                  <div class="banner_main_img">
+                     <figure><img src="{{ url_for('static', filename='images/our_img1.jpg') }}" alt="#"/>
+                        <h3>FARMING COMPANY</h3>
+                     </figure>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- about -->
+      <div id="about"  class="about">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-7 col-lg-7 col-md-12 padding_lert">
+                  <div class="about_img">
+                     <figure><img src="{{ url_for('static', filename='images/about_img.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-12">
+                  <div class="about_text">
+                     <div class="titlepage">
+                        <h2>About Our Farmer</h2>
+                        <p>
+                           At Farmer & Agriculture, we recognize that farmers are the backbone of our industry and the stewards of our land. We deeply value the dedication, hard work, and passion that farmers bring to their fields every day. Our commitment is to support and empower farmers by providing them with the resources, expertise, and innovative solutions they need to overcome challenges and achieve success. We understand the unique needs and challenges faced by farmers of all sizes and backgrounds, and we are here to offer personalized support every step of the way. Whether it's improving crop yields, implementing sustainable practices, accessing markets, or staying informed about the latest advancements, we stand by our farmers, ready to help them thrive and flourish in their endeavors. Farmer & Agriculture is more than just a service provider; we are a partner in the journey towards a prosperous and sustainable future for agriculture, driven by the resilience and dedication of our farmers. </p>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- our -->
+      <div id="our"  class="our">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-5 col-lg-5 col-md-12 order_2">
+                  <div class="our_text">
+                     <div class="titlepage">
+                        <h2>Our Fields</h2>
+                        <p>Agriculture fields are the bedrock of food production, encompassing a wide array of cultivated land used for growing crops, raising livestock, and cultivating other agricultural products. These fields, ranging from small family-owned plots to large commercial farms, play a vital role in sustaining human life, supporting rural economies, and preserving natural ecosystems. Through diverse farming practices and innovative technologies, farmers optimize productivity while promoting sustainability, environmental stewardship, and biodiversity conservation. Agriculture fields represent the dynamic intersection of human ingenuity and natural resources, where farmers work tirelessly to meet the ever-growing global demand for food and agricultural products. </p>
+                        
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-12 padding_right order_1">
+                  <div class="our_img">
+                     <figure><img src="{{ url_for('static', filename='images/our_img.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end our -->
+      <!-- our_fruit -->
+      <div id="our_fruit"  class="our_fruit">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-7 col-lg-7 col-md-12 padding_lert">
+                  <div class="row">
+                     <div class="col-md-6 padd_lrri">
+                        <div class="our_fruit_img">
+                           <figure><img src="{{ url_for('static', filename='images/fruit_img1.jpg') }}" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6 padd_lrri">
+                        <div class="our_fruit_img">
+                           <figure><img src="{{ url_for('static', filename='images/fruit_img2.jpg') }}" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6 padd_lrri">
+                        <div class="our_fruit_img">
+                           <figure><img src="{{ url_for('static', filename='images/fruit_img3.jpg') }}" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6 padd_lrri">
+                        <div class="our_fruit_img">
+                           <figure><img src="{{ url_for('static', filename='images/fruit_img4.jpg') }}" alt="#"/></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-5 col-lg-5 col-md-12">
+                  <div class="our_fruit_text">
+                     <div class="titlepage">
+                        <h2>Our Fruit<br> And <br> Vegetables</h2>
+                        <p>
+                           Our fruits and vegetables are cultivated with care and precision, representing the pinnacle of freshness, flavor, and nutritional value. Grown in fertile soil using sustainable practices, our produce embodies the essence of quality and wholesomeness. From succulent berries bursting with sweetness to crisp, vibrant greens brimming with vitality, each fruit and vegetable is harvested at the peak of ripeness to ensure maximum taste and nutritional benefits. Whether it's a juicy vine-ripened tomato, a crunchy bell pepper, or a luscious orchard fruit, our commitment to excellence shines through in every bite. With a focus on flavor, health, and environmental stewardship, our fruits and vegetables stand as a testament to the artistry and dedication of our farmers. </p>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end our_fruit -->
+      <!-- testimonial -->
+      <div class="testimonial">
+         <div class="container-fluid ">
+            <div class="row d_flex ">
+               <div class="col-xl-5 col-lg-5 col-md-12 order_2">
+                  <div class="testimonial_box">
+                     <div class="titlepage">
+                        <h2>Testimonial</h2>
+                     </div>
+                     <p>Ever since I started buying fruits and vegetables from Farmer & Agriculture, my meals have reached new heights of freshness and flavor. Each bite is bursting with vibrant taste, reminding me of the goodness of nature. I appreciate knowing that the produce I'm enjoying is grown sustainably and harvested with care. Farmer & Agriculture has become my go-to source for top-quality fruits and vegetables, and I couldn't be happier with their products! </p>
+                  </div>
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-12 padding_right order_1">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12 ">
+                                       <div class="test_box">
+                                          <h4>Vegetable Gardening</h4>
+                                          <p>
+                                             Vegetable gardening is the practice of cultivating edible plants for personal consumption, providing a sustainable source of fresh produce. Beginning with selecting a suitable location with adequate sunlight and well-drained soil, gardeners then choose vegetable varieties based on personal preference and climate. Preparation involves soil enrichment with organic matter, followed by planting seeds or seedlings at the appropriate depth and spacing. Regular watering, pest monitoring, and weeding ensure healthy plant growth, leading to bountiful harvests. Vegetable gardening offers not only nutritional benefits but also opportunities for outdoor activity, stress relief, and connection with nature, making it a fulfilling and rewarding pursuit for individuals of all ages and skill levels.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12 ">
+                                       <div class="test_box">
+                                          <h4>Crop Rotation</h4>
+                                          <p>Crop rotation is a sustainable farming practice that involves systematically changing the types of crops grown in a particular area from one season to the next. By rotating crops, farmers can improve soil fertility, reduce the buildup of pests and diseases, and optimize yields. The process typically involves dividing fields into different sections and planting crops from different plant families in each section over a multi-year cycle. For example, a farmer might rotate corn with legumes like beans or peas, followed by a season of leafy greens like lettuce or spinach. This rotation helps replenish soil nutrients, break pest cycles, and minimize soil erosion. Crop rotation is a cornerstone of regenerative agriculture, promoting healthier soils and more resilient farming systems.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12 ">
+                                       <div class="test_box">
+                                          <h4>Farmer's Market</h4>
+                                          <p>
+                                             A farmers' market is a community-driven marketplace where local farmers and producers gather to sell a diverse array of fresh, seasonal produce, meats, dairy products, and artisanal goods directly to consumers. These markets provide a platform for small-scale growers to showcase their products, offering shoppers the opportunity to connect with the people who grow their food and learn about sustainable farming practices. With a focus on freshness, quality, and community engagement, farmers' markets contribute to the promotion of local food systems, support small-scale agriculture, and provide consumers with a unique shopping experience that celebrates the abundance of the region.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial -->
+      <!--  footer -->
+      
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+      <!-- sidebar -->
+      <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>
+
