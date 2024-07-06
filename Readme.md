@@ -47,10 +47,15 @@ Project Structure
 
 
 web.py: Main file to run the application.
+
 requirements.txt: List of required Python libraries.
+
 models/: Directory containing the machine learning models.
+
 data/: Directory containing the dataset used for training.
+
 static/: Directory containing static files (CSS, JavaScript).
+
 templates/: Directory containing HTML templates.
 
 
